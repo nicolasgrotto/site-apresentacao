@@ -157,7 +157,6 @@ section.sobre-mim > div.centro p.centro-info{
 }
 .banner-conteudo .contato a:hover{
     background-color: goldenrod;
-    border: 2px solid darkorchid;
 }
 .metas{
     width: 100%;
@@ -183,6 +182,10 @@ section.metas > div.centro{
 .meta img{
     width: 70px;
     vertical-align: middle;
+}
+.meta img.false{
+    width: 30px;
+    height: 30px;
 }
 .meta span{
     display: inline-block;
@@ -323,7 +326,37 @@ section.formulario form{
     font-size: 18px;
     border-radius:10px;
 }
-
+footer{
+    padding:20px;
+   background: grey;
+   color:white;
+}
+.rodape .centro{
+    display: flex;
+    align-items: center;
+}
+.rodape > div.centro > div{
+    margin: 1cm;
+    line-height: 2em;
+}
+.texto-rodape{
+    padding:8px;
+    width: 33%;
+    text-align: center;
+}
+.meu-contato{
+    width: 33%;
+}
+.botoes{
+    width: 33%;
+}
+.botoes a{
+    text-decoration: none;
+    color: rgb(230, 106, 4);
+    background-color: rgb(247, 247, 111);
+    border-radius: 10px;
+    padding: 10px;
+}
 @media screen and (max-width: 720px) {
     .header > div.centro{
         justify-content: center;
@@ -369,5 +402,9 @@ section.formulario form{
     }
     .metas-info{
         width: 90%;
+    }
+    .rodape .centro{
+        flex-direction: column;
+        padding: 15px;
     }
 }
