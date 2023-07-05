@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header.cabecalho{
+    background-image: url('imgs/header-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0 2%;
+    max-width: 100%;
+    min-height: 720px;
+    max-height: 720px;
+}
+header > div.centro{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-items: center;
+}
+.logo-menu .dev{
+    color: gold;
+}
+.logo-menu{
+    color: whitesmoke;
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+.menu-conteudo a{
+    text-decoration: none;
+    color: rgb(230, 106, 4);
+}
+.menu-conteudo{
+    display: flex;
+    font-weight: bold;
+    font-size: 22px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.menu-conteudo p{
+    padding: 10px;
+}
+.menu-conteudo p:hover{
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+.menu-conteudo p.cnt-btn{
+    text-decoration: none;
+}
+.menu-conteudo a.contato{
+    background-color: rgb(247, 247, 111);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div.centro > .menu-conteudo  a.contato:hover{
+    background-color: rgb(1, 128, 128);
+    color: whitesmoke;
+}
+.bloco1{
+    display: block;
+    text-align: center;
+    color: whitesmoke;
+    padding: 50px;
+}
+.bloco1 h1{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.bloco1 img{
+    width: 560px;
+    height: 460px;
+    margin-top: 70px;
+}
+.bloco2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logos{
+    margin-top: 5cm;
+    margin-bottom: 5cm;
+}
+.bloco2 img{
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sobre-mim{
+    background: #FBFCFE;
+    opacity: 1;
+    width: 100%;
+}
+section.sobre-mim > div.centro{
+    text-align: center;
+    line-height: 2cm;
+}
+section.sobre-mim > div.centro h2{
+    font-size: 64px;
+}
+section.sobre-mim > div.centro p.centro-info{
+    font-size: 22px;
+}
+.infos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4cm;
+}
+.title-info{
+    font-size: 22px;
+    line-height: 2cm;
+}
+.caixa-infos{
+    border: solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 35%;
+    padding: 1cm;
+    line-height: 0.6cm;
+    margin: 10px;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: black;
+    box-shadow: 0px 20px 40px #2426721C;
+}
+.banner{
+    width: 100%;
+    background-image: url('imgs/BANNER\ IMG.svg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4cm;
+}
+.banner-conteudo{
+    text-align: center;
+    color: whitesmoke;
+    padding: 50px;
+    line-height: 2cm;
+}
+.banner-conteudo h1{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.banner-conteudo p{
+    font-size: 18px;
+}
+.banner-conteudo .contato a{
+    text-decoration: none;
+    color: white;
+    background-color: darkorchid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.banner-conteudo .contato a:hover{
+    background-color: goldenrod;
+    border: 2px solid darkorchid;
+}
+.metas{
+    width: 100%;
+    padding: 2cm;
+    margin-bottom: 5cm;
+}
+section.metas > div.centro{
+    display: flex;
+    align-items: center;
+}
+.metas-info{
+    width: 50%;
+}
+.metas-info h1{
+    font-size: 40px;
+    text-align: center;
+}
+.meta p{
+    margin-top: 15px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.meta img{
+    width: 70px;
+    vertical-align: middle;
+}
+.meta span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+.metas-img{
+    width: 50%;
+    margin: 2cm;
+}
+.meta a{
+    text-decoration: none;
+    color: white;
+    background-color: #255AFF;
+    padding: 10px;
+    border-radius: 20px;
+}
+.meta a:hover{
+    color: gold;
+}
+.metas-img img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .header > div.centro{
+        justify-content: center;
+    }
+    .bloco1{
+        color: gold;
+        padding: 0;
+    }
+    .bloco1 h1{
+        font-size: 25px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .bloco1 img{
+        max-width: 100%;
+        height: 300px;
+    }
+    .logos{
+        margin-top: 3cm;
+    }
+    .bloco2 img{
+        width: 50%;
+        margin: 0;
+    }
+    .caixa-infos{
+        width: 80%;
+    }
+    .banner-conteudo{
+        line-height: 1cm;
+    }
+    .banner-conteudo h1{
+        font-size: 30px;
+    }
+    .banner-conteudo p{
+        font-size: 14px;
+    }
+    .metas{
+        padding: 0;
+    }
+    section.metas > div.centro{
+        flex-direction: column;
+        width: 100%;
+    }
+    .metas-info{
+        width: 90%;
+    }
+}
