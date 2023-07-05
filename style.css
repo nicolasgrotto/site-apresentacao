@@ -46,19 +46,6 @@ header > div.centro{
     text-decoration: underline;
     text-decoration-color: gold;
 }
-.menu-conteudo p.cnt-btn{
-    text-decoration: none;
-}
-.menu-conteudo a.contato{
-    background-color: rgb(247, 247, 111);
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-div.centro > .menu-conteudo  a.contato:hover{
-    background-color: rgb(1, 128, 128);
-    color: whitesmoke;
-}
 .bloco1{
     display: block;
     text-align: center;
@@ -327,7 +314,6 @@ section.formulario form{
     border-radius:10px;
 }
 footer{
-    padding:20px;
    background: grey;
    color:white;
 }
@@ -336,7 +322,7 @@ footer{
     align-items: center;
 }
 .rodape > div.centro > div{
-    margin: 1cm;
+    padding: 15px;
     line-height: 2em;
 }
 .texto-rodape{
@@ -349,15 +335,33 @@ footer{
 }
 .botoes{
     width: 33%;
+    display: flex;
 }
 .botoes a{
     text-decoration: none;
     color: rgb(230, 106, 4);
     background-color: rgb(247, 247, 111);
     border-radius: 10px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+.botoes a:hover{
+    background-color: rgb(1, 128, 128);
+    color: whitesmoke;
 }
 @media screen and (max-width: 720px) {
+    .menu-conteudo a{
+        background-color: rgb(247, 247, 111);
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.centro > .menu-conteudo  a:hover{
+        background-color: rgb(1, 128, 128);
+        color: whitesmoke;
+    }
     .header > div.centro{
         justify-content: center;
     }
@@ -405,6 +409,18 @@ footer{
     }
     .rodape .centro{
         flex-direction: column;
-        padding: 15px;
+        align-items: normal;
+    }
+    .botoes{
+        flex-direction: column;
+    }
+    .rodape > div.centro > div{
+        line-height: 20px;
+        width: 90%;
+        text-align: left;
+    }
+    .botoes a{
+        margin-bottom: 10px;
+        width: 50%;
     }
 }
