@@ -24,10 +24,11 @@
                 <span><strong>Nick</strong></span>
             </div>
             <nav class="menu-conteudo">
-                <p><a href="inicio">Início</a></p>
-                <p><a href="#sobre-mim">Sobre Mim</a></p>
-                <p><a href="#avaliacoes">Avaliações</a></p>
-                <p class="cnt-btn"><a class="contato" href="#contato">Contato</a></p>
+                <p><a class="scroll" href="#inicio">Início</a></p>
+                <p><a class="scroll" href="#sobre-mim">Sobre Mim</a></p>
+                <p><a class="scroll" href="#avaliacoes">Avaliações</a></p>
+                <p class="cnt-btn"><a id="scroll" onclick="smoothScroll(event, 'contato')" class="contato"
+                        href="#contato">Contato</a></p>
             </nav>
         </div>
         <div class="bloco1">
@@ -39,11 +40,11 @@
 
     <section class="logos">
         <div class="bloco2">
-            <img src="imgs/html.png" alt="html logo"/>
-            <img src="imgs/css.png" alt="css logo"/>
-            <img src="imgs/javascript.png" alt="javascript logo"/>
-            <img src="imgs/csharp.png" alt="csharp logo"/>
-            <img src="imgs/python.png" alt="python logo"/>
+            <img src="imgs/html.png" alt="html logo" />
+            <img src="imgs/css.png" alt="css logo" />
+            <img src="imgs/javascript.png" alt="javascript logo" />
+            <img src="imgs/csharp.png" alt="csharp logo" />
+            <img src="imgs/python.png" alt="python logo" />
         </div>
     </section>
 
@@ -57,7 +58,8 @@
                     <img src="imgs/ICONE1.png" alt="icone de prancheta">
                     <p class="title-info"><b>Como comecei</b></p>
                     <p>Minha jornada no mundo da programação começou quando eu decidi ir cursar desenvolvimento de
-                        sistemas. Durante esse período(ainda estou cursando atualmente), consegui explorar diferentes linguagens e tecnologias, como
+                        sistemas. Durante esse período(ainda estou cursando atualmente), consegui explorar diferentes
+                        linguagens e tecnologias, como
                         Python, Portugol, C#, HTML, CSS e JavaScript. Cada uma dessas experiências proporcionou uma
                         visão única sobre a programação e suas aplicações, e foi aqui que decidi qual carreira eu queria
                         seguir.</p>
@@ -78,8 +80,8 @@
         <div class="centro">
             <div class="banner-conteudo">
                 <h1>E basicamente esse foi o meu começo.</h1>
-                <p>O mundo da TI é realmente fascinante não é mesmo? Abaixo irei falar um pouco de minhas metas</p>
-                <p class="contato"><a href="#contato">Entrar em contato</a></p>
+                <p>E assim descobri que o mundo da TI é fascinante. Abaixo irei falar um pouco de minhas metas</p>
+                <p class="contato"><a class="scroll" href="#contato">Entrar em contato</a></p>
             </div>
         </div>
     </section>
@@ -90,11 +92,15 @@
                 <h1>Minhas metas</h1>
                 <div class="meta">
                     <p><img src="imgs/checklist.png" alt="checklist"><span><b>Front-end</b>: conquistado</span></p>
-                    <p><img src="imgs/checklist.png" alt="checklist"><span><b>Desenvolvimento desktop</b>: conquistado</span></p>
-                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist"/><span><b>Back-end</b>: próximo desafio</span></p>
-                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist"/><span><b>Pentest e redes</b>: próximo desafio</span></p>
-                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist"/><span><b>Banco de Dados</b>: próximo desafio</span></p>
-                    <p><a href="#contato">Entrar em Contato</a></p>
+                    <p><img src="imgs/checklist.png" alt="checklist"><span><b>Desenvolvimento desktop</b>:
+                            conquistado</span></p>
+                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist" /><span><b>Back-end</b>:
+                            próximo desafio</span></p>
+                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist" /><span><b>Pentest e
+                                redes</b>: próximo desafio</span></p>
+                    <p><img class="false" src="imgs/false-checklist.png" alt="false checklist" /><span><b>Banco de
+                                Dados</b>: próximo desafio</span></p>
+                    <p><a class="scroll" href="#contato">Entrar em Contato</a></p>
                 </div>
             </div>
             <div class="metas-img">
@@ -112,43 +118,58 @@
                     <img src="imgs/html.png" alt="logo html" width="50px" height="50px">
                     <h3>HTML</h3>
                     <br>
-                    <p>Desde que comecei a utilizar o html não tive grandes problemas, mas a única coisa que me incomodou são os códigos. Eu sempre os achei difícil de ler e interpretar(achei engraçado o fato da dificuldade de ler html ter sido uma das causas da criação da markup language), portanto dei essa nota a essa linguagem.</p>
+                    <p>Desde que comecei a utilizar o html não tive grandes problemas, mas a única coisa que me
+                        incomodou são os códigos. Eu sempre os achei difícil de ler e interpretar(achei engraçado o fato
+                        da dificuldade de ler html ter sido uma das causas da criação da markup language), portanto dei
+                        essa nota a essa linguagem.</p>
                     <img src="imgs/RATE4.png" alt="review 4 estrelas">
                 </div>
                 <div class="box-carrosel">
                     <img src="imgs/css.png" alt="logo css" width="50px" height="50px">
                     <h3>CSS</h3>
                     <br>
-                    <p>O bom e velho CSS, nos meus primeiros dias de aprendizagem, essa foi a linguagem que me causou mais raiva interior. Mas já me acostumei, embora ainda tenha problemas, ao meu ver é questão de prática, e por isso darei essa nota ao css.</p>
+                    <p>O bom e velho CSS, nos meus primeiros dias de aprendizagem, essa foi a linguagem que me causou
+                        mais raiva interior. Mas já me acostumei, embora ainda tenha problemas, ao meu ver é questão de
+                        prática, e por isso darei essa nota ao css.</p>
                     <img src="imgs/RATE4.png" alt="review 4 estrelas">
                 </div>
                 <div class="box-carrosel">
                     <img src="imgs/javascript.png" alt="logo javascript" width="50px" height="50px">
                     <h3>JavaScript</h3>
                     <br>
-                    <p>JavaScript, não sou nenhum profissional nele ainda, utilizei pouco aliás. Espero dominar ele ano que vem, mas do quanto eu já usei e já sei, não me agradou comparado as outras linguagens, há muitos problemas no javascript e um deles é por ele ser fracamente "typado".</p>
+                    <p>JavaScript, não sou nenhum profissional nele ainda, utilizei pouco aliás. Espero dominar ele ano
+                        que vem, mas do quanto eu já usei e já sei, não me agradou comparado as outras linguagens, há
+                        muitos problemas no javascript e um deles é por ele ser fracamente "typado".</p>
                     <img src="imgs/RATE3.png" alt="review três estrelas">
                 </div>
                 <div class="box-carrosel">
                     <img src="imgs/csharp.png" alt="logo csharp" width="50px" height="50px">
                     <h3>C#</h3>
                     <br>
-                    <p>C# definitivamente me alegrou, desde o início eu gostei de sua sintaxe, além de ter aprimorado minha lógica rapidamente ao utilizá-lo. C# é definitivamente uma das minhas linguagens preferidas (e provavelmente sempre será). E por isso deixo aqui essa nota bem merecida ao C#.</p>
+                    <p>C# definitivamente me alegrou, desde o início eu gostei de sua sintaxe, além de ter aprimorado
+                        minha lógica rapidamente ao utilizá-lo. C# é definitivamente uma das minhas linguagens
+                        preferidas (e provavelmente sempre será). E por isso deixo aqui essa nota bem merecida ao C#.
+                    </p>
                     <img src="imgs/RATE.png" alt="review 5 estrelas">
                 </div>
                 <div class="box-carrosel">
                     <img src="imgs/python.png" alt="logo python" width="50px" height="50px">
                     <h3>Python</h3>
                     <br>
-                    <p>O querido e odiado (por muitos) python, minha primeira linguagem de programação. Aprendi só o básico de python, mas sua sintaxe simples e limpa foram ótimos para minha introdução à programação e minha lógica. Eu gosto muito de python e irei aprimorar meu conhecimento nele algum dia.</p>
-                    <img src="imgs/RATE.png" alt="review 5 estrelas"/>
+                    <p>O querido e odiado (por muitos) python, minha primeira linguagem de programação. Aprendi só o
+                        básico de python, mas sua sintaxe simples e limpa foram ótimos para minha introdução à
+                        programação e minha lógica. Eu gosto muito de python e irei aprimorar meu conhecimento nele
+                        algum dia.</p>
+                    <img src="imgs/RATE.png" alt="review 5 estrelas" />
                 </div>
                 <div class="box-carrosel">
-                    <img src="imgs/lampada.png" alt="logo que representa o portugol" width="50px" height="50px"/>
+                    <img src="imgs/lampada.png" alt="logo que representa o portugol" width="50px" height="50px" />
                     <h3>Portugol</h3>
                     <br>
-                    <p>Essa pseudo-linguagem é interessante, nos primeiros meses do meu curso de desenvolvimento de sistemas utilizamos ela. Foi interessante programar em português, além dela ter aprimorado minha lógica também. Por isso dou essa nota ao Portugol.</p>
-                    <img src="imgs/RATE4.png" alt="review 4 estrelas"/>
+                    <p>Essa pseudo-linguagem é interessante, nos primeiros meses do meu curso de desenvolvimento de
+                        sistemas utilizamos ela. Foi interessante programar em português, além dela ter aprimorado minha
+                        lógica também. Por isso dou essa nota ao Portugol.</p>
+                    <img src="imgs/RATE4.png" alt="review 4 estrelas" />
                 </div>
             </div>
         </div>
@@ -161,9 +182,8 @@
                 <input type="text" placeholder="Seu Nome..." />
                 <input type="email" placeholder="Seu e-mail" />
                 <textarea placeholder="Sua Mensagem"></textarea>
-                <input type="submit" name="acao" value="Enviar"
-            </form>
-            <p><b>*Esse formulário é puramente fictício e só tem o propósito de deixar o site mais bonito*</b></p>
+                <input type="submit" name="acao" value="Enviar" </form>
+                <p><b>*Esse formulário é puramente fictício e só tem o propósito de deixar o site mais bonito*</b></p>
         </div>
     </section>
 
@@ -177,35 +197,53 @@
                 <p>Site produzido por: Nicolas Grotto (apelido: Nick).</p>
             </div>
             <div class="botoes">
-                <a href="#inicio">Início</a>
-                    <a href="#sobre-mim">Sobre Mim</a>
-                    <a href="#avaliacoes">Avaliações</a>
+                <a class="scroll" href="#inicio">Início</a>
+                <a class="scroll" href="#sobre-mim">Sobre Mim</a>
+                <a class="scroll" href="#avaliacoes">Avaliações</a>
             </div>
     </footer>
 
     <script src="jquery.js"></script>
     <script src="slick.min.js"></script>
     <script>
-            $('.boxes-carrosel').slick({
+        $('.boxes-carrosel').slick({
             dots: true,
-            arrows:false,
-            speed:1000,
+            arrows: false,
+            speed: 1000,
             slidesToShow: 3,
             slidesToScroll: 3,
             autoplay: true,
             autoplaySpeed: 3000,
-            pauseOnHover:false,
+            pauseOnHover: false,
             responsive: [
-                        {
-                          breakpoint: 768,
-                          settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                          }
-                        }],
-            });
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }],
+        });
     </script>
-
+    <script>
+        var links = document.getElementsByClassName('scroll');
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = this.getAttribute('href');
+                document.querySelector(target).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+        function smoothScroll(event, targetId) {
+            event.preventDefault();
+            var target = document.getElementById(targetId);
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>

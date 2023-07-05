@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+a.scroll{
+    scroll-behavior: smooth;
+}
 header.cabecalho{
     background-image: url('imgs/header-bg.png');
     background-size: cover;
@@ -308,7 +311,7 @@ section.formulario form{
     height:50px;
     cursor: pointer;
     border: 0;
-    background: #255AFF;
+    background: darkorchid;
     color:white;
     font-size: 18px;
     border-radius:10px;
