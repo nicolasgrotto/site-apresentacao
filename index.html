@@ -111,11 +111,83 @@
                 <div class="box-carrosel">
                     <img src="imgs/html.png" alt="logo html" width="50px" height="50px">
                     <h3>HTML</h3>
-                    <p>Desde quando comecei a utilizar o html não tive grandes problemas, mas a única coisa que me incomodou são os códigos. Eu sempre os achei difícil de ler e interpretar, portanto dei essa nota a essa linguagem.</p>
+                    <br>
+                    <p>Desde que comecei a utilizar o html não tive grandes problemas, mas a única coisa que me incomodou são os códigos. Eu sempre os achei difícil de ler e interpretar(achei engraçado o fato da dificuldade de ler html ter sido uma das causas da criação da markup language), portanto dei essa nota a essa linguagem.</p>
+                    <img src="imgs/RATE4.png" alt="review 4 estrelas">
+                </div>
+                <div class="box-carrosel">
+                    <img src="imgs/css.png" alt="logo css" width="50px" height="50px">
+                    <h3>CSS</h3>
+                    <br>
+                    <p>O bom e velho CSS, nos meus primeiros dias de aprendizagem, essa foi a linguagem que me causou mais raiva interior. Mas já me acostumei, embora ainda tenha problemas, ao meu ver é questão de prática, e por isso darei essa nota ao css.</p>
+                    <img src="imgs/RATE4.png" alt="review 4 estrelas">
+                </div>
+                <div class="box-carrosel">
+                    <img src="imgs/javascript.png" alt="logo javascript" width="50px" height="50px">
+                    <h3>JavaScript</h3>
+                    <br>
+                    <p>JavaScript, não sou nenhum profissional nele ainda, utilizei pouco aliás. Espero dominar ele ano que vem, mas do quanto eu já usei e já sei, não me agradou comparado as outras linguagens, há muitos problemas no javascript e um deles é por ele ser fracamente "typado".</p>
+                    <img src="imgs/RATE3.png" alt="review três estrelas">
+                </div>
+                <div class="box-carrosel">
+                    <img src="imgs/csharp.png" alt="logo csharp" width="50px" height="50px">
+                    <h3>C#</h3>
+                    <br>
+                    <p>C# definitivamente me alegrou, desde o início eu gostei de sua sintaxe, além de ter aprimorado minha lógica rapidamente ao utilizá-lo. C# é definitivamente uma das minhas linguagens preferidas (e provavelmente sempre será). E por isso deixo aqui essa nota bem merecida ao C#.</p>
+                    <img src="imgs/RATE.png" alt="review 5 estrelas">
+                </div>
+                <div class="box-carrosel">
+                    <img src="imgs/python.png" alt="logo python" width="50px" height="50px">
+                    <h3>Python</h3>
+                    <br>
+                    <p>O querido e odiado (por muitos) python, minha primeira linguagem de programação. Aprendi só o básico de python, mas sua sintaxe simples e limpa foram ótimos para minha introdução à programação e minha lógica. Eu gosto muito de python e irei aprimorar meu conhecimento nele algum dia.</p>
+                    <img src="imgs/RATE.png" alt="review 5 estrelas">
+                </div>
+                <div class="box-carrosel">
+                    <img src="imgs/lampada.png" alt="logo que representa o portugol" width="50px" height="50px">
+                    <h3>Portugol</h3>
+                    <br>
+                    <p>Essa pseudo-linguagem é interessante, nos primeiros meses do meu curso de desenvolvimento de sistemas utilizamos ela. Foi interessante programar em português, além dela ter aprimorado minha lógica também. Por isso dou essa nota ao Portugol.</p>
+                    <img src="imgs/RATE4.png" alt="review 4 estrelas">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="formulario">
+        <h1>Entre em Contato</h1>
+        <div class="centro">
+            <form method="post">
+                <input type="text" placeholder="Seu Nome..." />
+                <input type="email" placeholder="Seu e-mail" />
+                <textarea placeholder="Sua Mensagem"></textarea>
+                <input type="submit" name="acao" value="Enviar"
+            </form>
+        </div>
+    </section>
+
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+            $('.boxes-carrosel').slick({
+            dots: true,
+            arrows:false,
+            speed:1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover:false,
+            responsive: [
+                        {
+                          breakpoint: 768,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }],
+            });
+    </script>
 
 </body>
 
