@@ -31,6 +31,9 @@ header > div.centro{
     text-decoration: underline;
     text-decoration-color: orangered;
 }
+.items-menu-mobile{
+    display: none;
+}
 .menu-conteudo a{
     text-decoration: none;
     color: rgb(230, 106, 4);
@@ -170,12 +173,8 @@ section.metas > div.centro{
     font-size: 18px;
 }
 .meta img{
-    width: 70px;
+    width: 50px;
     vertical-align: middle;
-}
-.meta img.false{
-    width: 30px;
-    height: 30px;
 }
 .meta span{
     display: inline-block;
@@ -356,10 +355,66 @@ footer{
 }
 @media screen and (max-width: 720px) {
     .menu-conteudo a{
+        display: none;
+    }
+    .logo-menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+    }
+    .items-menu-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: end;
+    }
+    .sidebar{
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        display: block;
+    }
+    .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        width: 65%;
+        height: 100%;
+        background-color: grey;
+        left: 0;
+        top: 0;
+        padding: 15px;
+        text-align: center;
+    }
+    .show{
+        opacity: 1;
+    }
+    .hide{
+        opacity: 0;
+    }
+    .logo-sidebar{
+        font-size: 30px;
+        color: whitesmoke;
+        text-decoration: underline;
+        text-decoration-color: orangered;
+    }
+    .menu-mobile a{
+        font-size: 20px;
         background-color: rgb(247, 247, 111);
         border-radius: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        text-decoration: none;
+        color: orangered;
+    }
+    .menu-mobile a:hover{
+        background-color: rgb(1, 128, 128);
+        color: whitesmoke;
+    }
+    .menu-mobile hr{
+        margin: 25px;
+        border-color: black;
     }
     div.centro > .menu-conteudo  a:hover{
         background-color: rgb(1, 128, 128);
@@ -419,11 +474,12 @@ footer{
     }
     .rodape > div.centro > div{
         line-height: 20px;
-        width: 90%;
-        text-align: left;
+        width: 100%;
+        text-align: center;
     }
     .botoes a{
-        margin-bottom: 10px;
-        width: 50%;
+        width: 33%;
+        padding: 0;
+        margin:  5px auto;
     }
 }

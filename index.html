@@ -23,6 +23,20 @@
                 <span class="dev"><strong>Dev</strong></span>
                 <span><strong>Nick</strong></span>
             </div>
+            <div class="items-menu-mobile">
+                <img class="sidebar" src="imgs/sidebar.png" alt="ícone da barra lateral">
+                <div class="menu-mobile">
+                    <p class="logo-sidebar">DevNick</p>
+                    <hr>
+                    <p><a class="scroll" href="#sobre-mim">Sobre Mim</a></p>
+                    <hr>
+                    <p><a class="scroll" href="#avaliacoes">Linguagens</a></p>
+                    <hr>
+                    <p class="cnt-btn"><a id="scroll" onclick="smoothScroll(event, 'contato')" class="contato"
+                        href="#contato">Contato</a></p>
+                    <hr>
+                </div>
+            </div>
             <nav class="menu-conteudo">
                 <p><a class="scroll" href="#inicio">Início</a></p>
                 <p><a class="scroll" href="#sobre-mim">Sobre Mim</a></p>
@@ -243,6 +257,19 @@
                 behavior: 'smooth'
             });
         }
+    </script>
+    <script>
+        var menuBtn = document.querySelector('.items-menu-mobile img');
+        menuBtn.addEventListener('click',()=>{
+            let itemsMenu = document.querySelector('.menu-mobile');
+            if(itemsMenu.classList.contains('show')){
+                    itemsMenu.classList.remove('show');
+                    itemsMenu.classList.add('hide');
+                }else{
+                    itemsMenu.classList.remove('hide');
+                    itemsMenu.classList.add('show');
+                }                    
+                });
     </script>
 </body>
 
