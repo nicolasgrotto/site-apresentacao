@@ -74,6 +74,12 @@ header > div.centro{
     flex-wrap: wrap;
     justify-content: center;
 }
+.bloco2 h2{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 .logos{
     margin-top: 5cm;
     margin-bottom: 5cm;
@@ -90,13 +96,14 @@ header > div.centro{
 }
 section.sobre-mim > div.centro{
     text-align: center;
-    line-height: 2cm;
 }
 section.sobre-mim > div.centro h2{
     font-size: 64px;
+    margin-bottom: 2cm;
 }
 section.sobre-mim > div.centro p.centro-info{
     font-size: 22px;
+    margin-bottom: 1cm;
 }
 .infos{
     display: flex;
@@ -106,7 +113,7 @@ section.sobre-mim > div.centro p.centro-info{
 }
 .title-info{
     font-size: 22px;
-    line-height: 2cm;
+    margin-bottom: 2cm;
 }
 .caixa-infos{
     border: solid white;
@@ -438,13 +445,18 @@ footer{
     }
     .logos{
         margin-top: 3cm;
+        margin-bottom: 3cm;
     }
     .bloco2 img{
-        width: 50%;
+        width: 33%;
         margin: 0;
     }
+    .title-info{
+        margin-bottom: 1cm;
+    }
     .caixa-infos{
-        width: 80%;
+        width: 90%;
+        border: solid black;
     }
     .banner-conteudo{
         line-height: 1cm;
