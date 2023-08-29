@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-*Description*:
+_*Description*_:
 
 This website was developed using HTML, CSS, and JavaScript to improve my front-end hard skills. It showcases my work and experience, and provides information about my background and goals.
 
