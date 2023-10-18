@@ -6,17 +6,17 @@ This website was developed using HTML, CSS, and JavaScript to improve my front-e
 
 **Features**:
 
-A clean and modern design
-A responsive layout that adapts to any screen size
-A variety of interactive elements
-A portfolio of my work
-A blog about my experiences and learnings
+- A clean and modern design
+- A responsive layout that adapts to any screen size
+- Some interactive elements
+- A portfolio of my work
+- A blog about my experiences and learnings
 
 **Technologies Used**:
 
-HTML
-CSS
-JavaScript
+![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=264CE4)
+![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
 
 **Contributing**:
 
